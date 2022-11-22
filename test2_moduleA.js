@@ -7,7 +7,7 @@ module.exports.init = function(){
             if (err) reject("Unable to read file");
             else {
                 students = JSON.parse(data);
-                resolve();
+                resolve(students);
             }
         })
     })
